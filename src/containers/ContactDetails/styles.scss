@@ -1,4 +1,19 @@
 .contact-details-wrapper {
   width: 50vw;
   margin: auto;
+  .submit-button {
+    margin-top: 50px;
+    width: 70px;
+    border: none;
+    outline: none;
+    background-color: #4039cb;
+    color: #fff;
+    height: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
 }

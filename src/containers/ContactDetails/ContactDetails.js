@@ -5,19 +5,20 @@
 import React, { Component } from "react";
 import DetailInfo from './DetailInfo/DetailInfo';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
 /*** End Imports ***/
 
 class ContactDetails extends Component {
     constructor(props) {
         super(props);
-        let valueObj = props.location.state.newObj;
+        let valueObj = props.location && props.location.state && props.location.state.newObj ? props.location.state.newObj : null;
         this.state = {
-            name: valueObj.name,
-            email: valueObj.email,
-            password: valueObj.password,
-            phone: valueObj.phone,
-            address: valueObj.address
+            name: valueObj ? valueObj.name : '',
+            email: valueObj ? valueObj.email : '',
+            password: valueObj ? valueObj.password : '',
+            phone: valueObj ? valueObj.phone : '',
+            address: valueObj ? valueObj.address : ''
         }
     };
 
@@ -58,6 +59,10 @@ class ContactDetails extends Component {
                     label={"Address"}
                     value={address}
                 />
+                <Link to='/'>
+                    <div className="submit-button">Back</div>
+                </Link>
+                
             </div>
         );
     }
