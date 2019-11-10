@@ -1,0 +1,10 @@
+.detail-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  .dw-label {
+    margin-right: 30px;
+    font-weight: bold;
+  }
+}

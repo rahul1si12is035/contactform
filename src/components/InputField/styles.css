@@ -1,0 +1,17 @@
+.input-field-wrapper {
+  margin: 30px 0;
+}
+
+.input-field-wrapper input {
+  padding: 0 15px;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  color: #000;
+  height: 50px;
+}
+
+.input-field-wrapper .error-text {
+  color: #d0021b;
+}
+/*# sourceMappingURL=styles.css.map */

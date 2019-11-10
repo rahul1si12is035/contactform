@@ -1,0 +1,18 @@
+.contact-form-wrapper {
+  width: 50vw;
+  margin: auto;
+  .submit-button {
+    width: 180px;
+    border: none;
+    outline: none;
+    background-color: #4039cb;
+    color: #fff;
+    height: 40px;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
