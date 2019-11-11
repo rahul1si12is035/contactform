@@ -167,7 +167,7 @@ class ContactForm extends Component {
                     value={email}
                     onChangeInputHandler={this.onChangeEmailHandler}
                     placeholder={"Email"}
-                    maxLength={20}
+                    maxLength={50}
                     hasError={hasErrorEmail}
                     errorText={"Email id is not valid"}
                 />
@@ -197,7 +197,7 @@ class ContactForm extends Component {
                     value={address}
                     onChangeInputHandler={this.onChangeAddressHandler}
                     placeholder={"Address"}
-                    maxLength={50}
+                    maxLength={100}
                     hasError={hasErrorAddress}
                     errorText={"Address is required"}
                 />
